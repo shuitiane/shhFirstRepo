@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="8">
   <diagram name="试验报告识别智能体" id="7xR7pTWrQ7vcR49EA371">
-    <mxGraphModel dx="983" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,7 +56,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="o70fCOLrhih-06OqGm06" name="试验报告校核智能体">
-    <mxGraphModel dx="983" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -117,28 +117,28 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-1" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="325" y="80" width="50" height="50" as="geometry" />
+          <mxGeometry x="325" y="87" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-2" value="&lt;b&gt;大模型解析用户输入的问题&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Semantic Understanding)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;利用大语言模型对用户自然语言查询进行语义理解，识别关键实体、操作意图和逻辑关系&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="220" y="160" width="260" height="80" as="geometry" />
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-2" value="&lt;b&gt;大模型解析用户输入的问题&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;利用大语言模型对用户自然语言查询进行语义理解，识别关键实体、操作意图和逻辑关系&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="220" y="167" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-3" value="&lt;b&gt;读取试验项目模型属性&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Load Model Attributes)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;从系统元数据中加载试验项目的字段定义信息，包括字段名称、数据类型和约束条件&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-3" value="&lt;b&gt;读取试验项目模型属性&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;从系统元数据中加载试验项目的字段定义信息，包括字段名称、数据类型和约束条件&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-110" y="350" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-4" value="&lt;b&gt;读取近似查询语句案例&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Retrieve Similar Queries)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;检索历史中语义相近的查询案例及SQL语句，作为Few-shot Prompt上下文示例&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-4" value="&lt;b&gt;读取近似查询语句案例&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;检索历史中语义相近的查询案例及SQL语句，作为Few-shot Prompt上下文示例&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="220" y="350" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-5" value="&lt;b&gt;读取试验项目数据模板&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Load Data Templates)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;获取试验项目对应的标准数据结构模板，明确业务字段与数据库字段的映射关系&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-5" value="&lt;b&gt;读取试验项目数据模板&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;获取试验项目对应的标准数据结构模板，明确业务字段与数据库字段的映射关系&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="540" y="350" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-6" value="&lt;b&gt;大模型生成SQL并调用查询接口&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(SQL Generation &amp; Execution)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;基于语义解析结果和支撑数据，生成符合语法规范的SQL查询语句并提交执行&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="220" y="553" width="260" height="80" as="geometry" />
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-6" value="&lt;b&gt;大模型生成SQL并调用查询接口&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;基于语义解析结果和支撑数据，生成符合语法规范的SQL查询语句并提交执行&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="220" y="526" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-7" value="&lt;b&gt;将查询结果输出给前端页面展示&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Result Presentation)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;将结构化数据进行格式化处理，通过后端服务传输至前端界面实现可视化呈现&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="220" y="683" width="260" height="80" as="geometry" />
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-7" value="&lt;b&gt;将查询结果输出给前端页面展示&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;将结构化数据进行格式化处理，通过后端服务传输至前端界面实现可视化呈现&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="220" y="656" width="260" height="80" as="geometry" />
         </mxCell>
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-8" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="325" y="793" width="50" height="50" as="geometry" />
+          <mxGeometry x="325" y="766" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-9" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="wEwS-H1-2ceGUzpiBcTZ-1" target="wEwS-H1-2ceGUzpiBcTZ-2">
           <mxGeometry relative="1" as="geometry" />
@@ -146,8 +146,8 @@
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-10" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="wEwS-H1-2ceGUzpiBcTZ-2" target="wEwS-H1-2ceGUzpiBcTZ-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="350" y="290" />
-              <mxPoint x="20" y="290" />
+              <mxPoint x="350" y="310" />
+              <mxPoint x="20" y="310" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -157,31 +157,31 @@
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-12" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="wEwS-H1-2ceGUzpiBcTZ-2" target="wEwS-H1-2ceGUzpiBcTZ-5">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="350" y="290" />
-              <mxPoint x="670" y="290" />
+              <mxPoint x="350" y="310" />
+              <mxPoint x="670" y="310" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-13" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1">
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-13" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" target="wEwS-H1-2ceGUzpiBcTZ-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="20" y="430" as="sourcePoint" />
-            <mxPoint x="350" y="553" as="targetPoint" />
+            <mxPoint x="350" y="520" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="20" y="490" />
-              <mxPoint x="350" y="490" />
+              <mxPoint x="20" y="480" />
+              <mxPoint x="350" y="480" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-14" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="wEwS-H1-2ceGUzpiBcTZ-4" target="wEwS-H1-2ceGUzpiBcTZ-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-15" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1">
+        <mxCell id="wEwS-H1-2ceGUzpiBcTZ-15" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="wEwS-H1-2ceGUzpiBcTZ-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="670" y="430" as="sourcePoint" />
             <mxPoint x="350" y="553" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="670" y="490" />
-              <mxPoint x="350" y="490" />
+              <mxPoint x="670" y="480" />
+              <mxPoint x="350" y="480" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -192,16 +192,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-18" value="设备健康智能问诊智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="240" y="20" width="220" height="30" as="geometry" />
+          <mxGeometry x="240" y="50" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-19" value="并行读取三类支撑数据" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
-          <mxGeometry x="280" y="260" width="162" height="20" as="geometry" />
+          <mxGeometry x="340" y="270" width="162" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="lvOXaJ_HNZcRiHXBgfsJ" name="援例诊断智能体">
-    <mxGraphModel dx="1426" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1188" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -246,6 +246,326 @@
         </mxCell>
         <mxCell id="k81Zt3lsYIYLHkIJKMMV-32" value="援例诊断智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="235" y="20" width="220" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2mUtna7DP6wZ4ddrw2Zh" name="第 5 页">
+    <mxGraphModel dx="1426" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-1" value="试验报告识别智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontFamily=Times New Roman;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="30" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-2" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="388.5" y="90" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-3" value="&lt;b&gt;文本提取器&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Text Extractor)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;从Word/PDF提取完整文本内容，支持多种文件格式解析，确保信息完整性与可读性&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="170" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-4" value="&lt;b&gt;参数提取器&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Parameter Extractor)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;识别实验报告类型（随机对照试验、队列研究等），为后续解析提供上下文依据&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="270" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-5" value="&lt;b&gt;实验项提取&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Experiment Item Extraction)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;定位并抽取实验项目信息：研究对象、干预措施、观测指标、样本量、实验周期等&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="370" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-6" value="&lt;b&gt;提示词工程&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Prompt Engineering)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;设计结构化提示词，明确信息抽取格式要求，提升解析准确性&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="470" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-7" value="&lt;b&gt;提示汇总与解析&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Prompt Aggregation &amp; Parsing)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;整合提示词，大语言模型语义解析，输出标准化JSON数据&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="570" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-8" value="&lt;b&gt;JSON 数据入库&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Data Storage)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;写入数据库，完成非结构化到结构化转化，支持查询与分析应用&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="263.5" y="670" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-9" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="388.5" y="770" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-10" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="9FV4eFLNvIfHV9cUlgEs-2" target="9FV4eFLNvIfHV9cUlgEs-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-11" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="9FV4eFLNvIfHV9cUlgEs-3" target="9FV4eFLNvIfHV9cUlgEs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-12" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="9FV4eFLNvIfHV9cUlgEs-4" target="9FV4eFLNvIfHV9cUlgEs-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-13" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="9FV4eFLNvIfHV9cUlgEs-5" target="9FV4eFLNvIfHV9cUlgEs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-14" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="9FV4eFLNvIfHV9cUlgEs-6" target="9FV4eFLNvIfHV9cUlgEs-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-15" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="9FV4eFLNvIfHV9cUlgEs-7" target="9FV4eFLNvIfHV9cUlgEs-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9FV4eFLNvIfHV9cUlgEs-16" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="9FV4eFLNvIfHV9cUlgEs-8" target="9FV4eFLNvIfHV9cUlgEs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QgbfIiLCiplscyOzIrUJ" name="试验报告识别智能体2">
+    <mxGraphModel dx="1188" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-35" value="试验报告识别智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontFamily=Times New Roman;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="30" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-36" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="90" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-37" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;文本提取器&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font size=&quot;2&quot;&gt;自然语言理解能力&lt;/font&gt;&lt;/span&gt;&lt;font size=&quot;2&quot;&gt;)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="260" y="170" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-38" value="&lt;b&gt;参数提取器&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;font-size: small;&quot;&gt;上下文理解能力&lt;/span&gt;&lt;font size=&quot;2&quot;&gt;)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="260" y="270" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-39" value="&lt;b&gt;实验项提取&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(信息抽取与整合)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="260" y="370" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-40" value="&lt;b&gt;提示词工程&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(语义理解能力)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="260" y="470" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-41" value="&lt;b&gt;提示汇总与解析&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(提示词工程辅助)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="570" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-42" value="&lt;b&gt;JSON 数据入库&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Data Storage)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="260" y="670" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-43" value="&lt;b&gt;文本提取器详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;从Word/PDF提取完整文本内容，支持多种文件格式解析，确保信息完整性与可读性。处理表格、图像OCR识别和文本结构重建。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="578.5" y="120" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-44" value="&lt;b&gt;参数提取器详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;识别实验报告类型（随机对照试验、队列研究等），为后续解析提供上下文依据。分析文档结构，识别关键章节和元数据。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="578.5" y="250" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-45" value="&lt;b&gt;实验项提取详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;定位并抽取实验项目信息：研究对象、干预措施、观测指标、样本量、实验周期等。使用NLP技术识别实体和关系。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="578.5" y="370" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-46" value="&lt;b&gt;提示词工程详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;设计结构化提示词，明确信息抽取格式要求，提升解析准确性。针对不同报告类型优化提示策略。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="578.5" y="490" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-47" value="&lt;b&gt;提示汇总与解析详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;整合提示词，大语言模型语义解析，输出标准化JSON数据。进行数据验证和纠错处理。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="578.5" y="600" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-48" value="&lt;b&gt;JSON 数据入库详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;写入数据库，完成非结构化到结构化转化，支持查询与分析应用。建立数据索引，提供API访问接口。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="578.5" y="710" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-49" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="760" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-50" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-36" target="ddzj6O9E_2P0jOeEfiGg-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-51" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-37" target="ddzj6O9E_2P0jOeEfiGg-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-52" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-38" target="ddzj6O9E_2P0jOeEfiGg-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-53" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-39" target="ddzj6O9E_2P0jOeEfiGg-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-54" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-40" target="ddzj6O9E_2P0jOeEfiGg-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-55" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-41" target="ddzj6O9E_2P0jOeEfiGg-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-56" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-42" target="ddzj6O9E_2P0jOeEfiGg-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-57" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-37" target="ddzj6O9E_2P0jOeEfiGg-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-58" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-38" target="ddzj6O9E_2P0jOeEfiGg-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-59" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-39" target="ddzj6O9E_2P0jOeEfiGg-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-60" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-40" target="ddzj6O9E_2P0jOeEfiGg-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-61" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-41" target="ddzj6O9E_2P0jOeEfiGg-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ddzj6O9E_2P0jOeEfiGg-62" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="ddzj6O9E_2P0jOeEfiGg-42" target="ddzj6O9E_2P0jOeEfiGg-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1xjW0ELpZ1pbP3v_RydB" name="试验报告校核智能体2">
+    <mxGraphModel dx="1188" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-1" value="试验报告校核智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-2" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="315" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-3" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;解析数据读取&lt;/font&gt;&lt;/b&gt;&lt;br&gt;(关键词识别能力、结构化信息提取能力)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="215" y="157" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;通用校核规则加载&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font size=&quot;2&quot;&gt;LLM&lt;/font&gt;&lt;/span&gt;&lt;font size=&quot;2&quot;&gt;)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="215" y="267" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;试验项提取&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(&lt;span style=&quot;background-color: transparent;&quot;&gt;上下文理解能力&lt;/span&gt;)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="215" y="377" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;系统配置规则读取&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(RAG深度检索)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="215" y="487" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;大模型辅助校核&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font size=&quot;2&quot;&gt;规则理解与解析能力、&lt;/font&gt;&lt;/span&gt;&lt;font size=&quot;2&quot;&gt;辑推理能力)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="215" y="597" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-8" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;数据保存与入库&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(Data Storage)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="215" y="707" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-9" value="&lt;b&gt;解析数据读取详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;读取大模型解析生成的JSON格式结构化数据，确保数据完整性与格式合规性。验证JSON结构完整性，检查必填字段是否存在。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="130" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-10" value="&lt;b&gt;通用校核规则加载详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;加载行业或企业标准中的通用校核规则，如电力行业标准《DL/T 1685》等。支持多种行业标准格式，可扩展规则库。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="247" width="350" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-11" value="&lt;b&gt;试验项提取详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;从JSON数据中提取所有已识别的试验项字段，作为规则匹配与校验的基本单元。识别关键试验参数和测量指标。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="357" width="350" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-12" value="&lt;b&gt;系统配置规则读取详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;读取系统中预设的个性化校验规则，包括字段必填性、单位规范、数值阈值等。支持动态规则配置和更新。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="467" width="350" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-13" value="&lt;b&gt;大模型辅助校核详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;利用大语言模型结合规则进行语义级校核，识别潜在错误、矛盾或模糊信息。提供智能纠错和建议功能。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="585" width="350" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-14" value="&lt;b&gt;数据保存与入库详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;通过多级校核后，将结构化数据持久化存储至数据库，完成数据闭环管理。支持数据版本管理和审计追踪。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="700" width="350" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-15" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="315" y="817" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-16" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-2" target="qC4EUKcJMeQZBcC4HQtV-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-17" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-3" target="qC4EUKcJMeQZBcC4HQtV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-18" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-4" target="qC4EUKcJMeQZBcC4HQtV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-19" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-5" target="qC4EUKcJMeQZBcC4HQtV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-20" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-6" target="qC4EUKcJMeQZBcC4HQtV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-21" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-7" target="qC4EUKcJMeQZBcC4HQtV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-22" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-8" target="qC4EUKcJMeQZBcC4HQtV-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-23" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-3" target="qC4EUKcJMeQZBcC4HQtV-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-24" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-4" target="qC4EUKcJMeQZBcC4HQtV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-25" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-5" target="qC4EUKcJMeQZBcC4HQtV-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-26" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-6" target="qC4EUKcJMeQZBcC4HQtV-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-27" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-7" target="qC4EUKcJMeQZBcC4HQtV-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qC4EUKcJMeQZBcC4HQtV-28" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="qC4EUKcJMeQZBcC4HQtV-8" target="qC4EUKcJMeQZBcC4HQtV-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Dj2djM3FIfUV7rLFioRD" name="援例诊断智能体2">
+    <mxGraphModel dx="1188" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-1" value="援例诊断智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="335" y="20" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-2" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="315" y="70" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;缺陷案例智能识别&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(自然语言理解能力、&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font&gt;上下文理解能力&lt;/font&gt;&lt;/span&gt;&lt;font&gt;&lt;br&gt;、&lt;/font&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font&gt;信息抽取与整合&lt;/font&gt;&lt;/span&gt;&lt;font&gt;)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="215" y="157" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;解析记录管理&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(&lt;/font&gt;&lt;span&gt;结构化信息提取能力&lt;/span&gt;&lt;font&gt;)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="215" y="247" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;统计分析&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(&lt;/font&gt;&lt;span&gt;结构化信息提取能力&lt;/span&gt;&lt;font&gt;)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="215" y="337" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;知识图谱&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(结构化信息提取能力)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="215" y="427" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;援例诊断&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font&gt;(&lt;/font&gt;&lt;span&gt;自然语言理解能力、&lt;/span&gt;&lt;font&gt;逻辑推理能力)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="215" y="517" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-8" value="&lt;b&gt;缺陷案例智能识别详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;调用援例诊断智能体，识别设备名称类型、故障类型原因、解决方案及时间信息。支持多种设备类型和故障模式的智能识别。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="110" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-9" value="&lt;b&gt;解析记录管理详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;建立解析记录页面，支持按条件查询删除、数据导出和原件下载功能。提供完整的CRUD操作和批量处理能力。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="220" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-10" value="&lt;b&gt;统计分析详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;展示各单位各电站各部件案例数量，支持条件统计和图表数据展示。提供多维度的数据分析和可视化报表。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="330" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-11" value="&lt;b&gt;知识图谱详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;通过标签选择生成图谱，展示案例关联和设备统计，支持多维度分析。提供交互式图谱探索和关系挖掘功能。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="440" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-12" value="&lt;b&gt;援例诊断详细说明：&lt;/b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;输入缺陷描述，系统自动推送类似案例及解决方案，支持文本预处理。提供智能匹配算法和相似度排序功能。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fillColor=#f5f5f5;strokeColor=#666666;align=left;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="550" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-13" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="315" y="617" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-14" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-2" target="HO0b0WbhiGrWbbzAPUqh-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-15" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontSize=12;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-3" target="HO0b0WbhiGrWbbzAPUqh-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-16" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontSize=12;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-4" target="HO0b0WbhiGrWbbzAPUqh-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-17" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontSize=12;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-5" target="HO0b0WbhiGrWbbzAPUqh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-18" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontSize=12;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-6" target="HO0b0WbhiGrWbbzAPUqh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-19" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-7" target="HO0b0WbhiGrWbbzAPUqh-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-20" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-3" target="HO0b0WbhiGrWbbzAPUqh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-21" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-4" target="HO0b0WbhiGrWbbzAPUqh-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-22" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-5" target="HO0b0WbhiGrWbbzAPUqh-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-23" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-6" target="HO0b0WbhiGrWbbzAPUqh-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HO0b0WbhiGrWbbzAPUqh-24" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;dashed=1;strokeColor=#666666;" edge="1" parent="1" source="HO0b0WbhiGrWbbzAPUqh-7" target="HO0b0WbhiGrWbbzAPUqh-12">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
