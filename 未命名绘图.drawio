@@ -1,5 +1,5 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="2">
-  <diagram name="Page-1" id="7xR7pTWrQ7vcR49EA371">
+  <diagram name="试验报告识别智能体" id="7xR7pTWrQ7vcR49EA371">
     <mxGraphModel dx="983" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -55,11 +55,59 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="o70fCOLrhih-06OqGm06" name="第 2 页">
-    <mxGraphModel dx="1426" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="o70fCOLrhih-06OqGm06" name="试验报告校核智能体">
+    <mxGraphModel dx="983" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-1" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="321.5" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-2" value="&lt;b&gt;解析数据读取&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Parsed Data Reading)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;读取大模型解析生成的JSON格式结构化数据，确保数据完整性与格式合规性&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="157" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-3" value="&lt;b&gt;通用校核规则加载&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Load General Validation Rules)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;加载行业或企业标准中的通用校核规则，如电力行业标准《DL/T 1685》等&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="267" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-4" value="&lt;b&gt;试验项提取&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Experiment Item Extraction)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;从JSON数据中提取所有已识别的试验项字段，作为规则匹配与校验的基本单元&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="377" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-5" value="&lt;b&gt;系统配置规则读取&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Load System-Specific Rules)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;读取系统中预设的个性化校验规则，包括字段必填性、单位规范、数值阈值等&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="487" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-6" value="&lt;b&gt;大模型辅助校核&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(AI-Based Data Validation)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;利用大语言模型结合规则进行语义级校核，识别潜在错误、矛盾或模糊信息&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="597" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-7" value="&lt;b&gt;数据保存与入库&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Data Storage)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;通过多级校核后，将结构化数据持久化存储至数据库，完成数据闭环管理&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="707" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-8" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="318.5" y="817" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-9" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="nxqMLoHGvbRojUmxTM8e-1" target="nxqMLoHGvbRojUmxTM8e-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-10" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="nxqMLoHGvbRojUmxTM8e-2" target="nxqMLoHGvbRojUmxTM8e-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-11" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="nxqMLoHGvbRojUmxTM8e-3" target="nxqMLoHGvbRojUmxTM8e-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-12" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="nxqMLoHGvbRojUmxTM8e-4" target="nxqMLoHGvbRojUmxTM8e-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-13" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="nxqMLoHGvbRojUmxTM8e-5" target="nxqMLoHGvbRojUmxTM8e-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-14" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="nxqMLoHGvbRojUmxTM8e-6" target="nxqMLoHGvbRojUmxTM8e-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-15" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="nxqMLoHGvbRojUmxTM8e-7" target="nxqMLoHGvbRojUmxTM8e-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nxqMLoHGvbRojUmxTM8e-16" value="试验报告校核智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="235" y="20" width="220" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
