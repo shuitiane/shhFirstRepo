@@ -1,57 +1,65 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="2">
   <diagram name="Page-1" id="7xR7pTWrQ7vcR49EA371">
-    <mxGraphModel dx="815" dy="406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="983" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-3" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="315" y="67" width="60" height="60" as="geometry" />
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-3" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="321.5" y="80" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-4" value="&lt;b&gt;文本提取器&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Text Extractor)&lt;/font&gt;&lt;hr&gt;从Word/PDF提取完整文本内容，支持多种文件格式解析，确保信息完整性与可读性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-4" value="&lt;b&gt;文本提取器&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Text Extractor)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;从Word/PDF提取完整文本内容，支持多种文件格式解析，确保信息完整性与可读性&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="215" y="157" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-5" value="&lt;b&gt;参数提取器&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Parameter Extractor)&lt;/font&gt;&lt;hr&gt;识别实验报告类型（随机对照试验、队列研究等），为后续解析提供上下文依据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-5" value="&lt;b&gt;参数提取器&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Parameter Extractor)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;识别实验报告类型（随机对照试验、队列研究等），为后续解析提供上下文依据&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="215" y="267" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-6" value="&lt;b&gt;实验项提取&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Experiment Item Extraction)&lt;/font&gt;&lt;hr&gt;定位并抽取实验项目信息：研究对象、干预措施、观测指标、样本量、实验周期等" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-6" value="&lt;b&gt;实验项提取&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Experiment Item Extraction)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;定位并抽取实验项目信息：研究对象、干预措施、观测指标、样本量、实验周期等&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="215" y="377" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-7" value="&lt;b&gt;提示词工程&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Prompt Engineering)&lt;/font&gt;&lt;hr&gt;设计结构化提示词，明确信息抽取格式要求，提升解析准确性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-7" value="&lt;b&gt;提示词工程&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Prompt Engineering)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;设计结构化提示词，明确信息抽取格式要求，提升解析准确性&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="215" y="487" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-8" value="&lt;b&gt;提示汇总与解析&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Prompt Aggregation &amp; Parsing)&lt;/font&gt;&lt;hr&gt;整合提示词，大语言模型语义解析，输出标准化JSON数据" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-8" value="&lt;b&gt;提示汇总与解析&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Prompt Aggregation &amp;amp; Parsing)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;整合提示词，大语言模型语义解析，输出标准化JSON数据&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="215" y="597" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-9" value="&lt;b&gt;JSON 数据入库&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Data Storage)&lt;/font&gt;&lt;hr&gt;写入数据库，完成非结构化到结构化转化，支持查询与分析应用" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-9" value="&lt;b&gt;JSON 数据入库&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Data Storage)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;写入数据库，完成非结构化到结构化转化，支持查询与分析应用&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="215" y="707" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-10" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="315" y="817" width="60" height="60" as="geometry" />
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-10" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="318.5" y="817" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-3" target="YnvSCn2IHAe0aS6fMFve-4">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-11" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-3" target="YnvSCn2IHAe0aS6fMFve-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-4" target="YnvSCn2IHAe0aS6fMFve-5">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-12" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-4" target="YnvSCn2IHAe0aS6fMFve-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-5" target="YnvSCn2IHAe0aS6fMFve-6">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-13" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-5" target="YnvSCn2IHAe0aS6fMFve-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-6" target="YnvSCn2IHAe0aS6fMFve-7">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-14" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-6" target="YnvSCn2IHAe0aS6fMFve-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-7" target="YnvSCn2IHAe0aS6fMFve-8">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-15" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-7" target="YnvSCn2IHAe0aS6fMFve-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-8" target="YnvSCn2IHAe0aS6fMFve-9">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-16" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-8" target="YnvSCn2IHAe0aS6fMFve-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-9" target="YnvSCn2IHAe0aS6fMFve-10">
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-17" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="YnvSCn2IHAe0aS6fMFve-9" target="YnvSCn2IHAe0aS6fMFve-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YnvSCn2IHAe0aS6fMFve-18" value="试验报告识别智能体" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="235" y="10" width="220" height="30" as="geometry" />
+        <mxCell id="YnvSCn2IHAe0aS6fMFve-18" value="试验报告识别智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="235" y="20" width="220" height="30" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="o70fCOLrhih-06OqGm06" name="第 2 页">
+    <mxGraphModel dx="1426" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
