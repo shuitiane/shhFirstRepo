@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="4">
   <diagram name="试验报告识别智能体" id="7xR7pTWrQ7vcR49EA371">
     <mxGraphModel dx="983" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -196,6 +196,56 @@
         </mxCell>
         <mxCell id="wEwS-H1-2ceGUzpiBcTZ-19" value="并行读取三类支撑数据" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontFamily=Times New Roman;" vertex="1" parent="1">
           <mxGeometry x="280" y="260" width="162" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lvOXaJ_HNZcRiHXBgfsJ" name="援例诊断智能体">
+    <mxGraphModel dx="1426" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-19" value="开始" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="321.5" y="80" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-20" value="&lt;b&gt;缺陷案例智能识别&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Intelligent Case Identification)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;调用援例诊断智能体，识别设备名称类型、故障类型原因、解决方案及时间信息&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="157" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-21" value="&lt;b&gt;解析记录管理&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Record Management)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;建立解析记录页面，支持按条件查询删除、数据导出和原件下载功能&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="267" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-22" value="&lt;b&gt;统计分析&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Statistical Analysis)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;展示各单位各电站各部件案例数量，支持条件统计和图表数据展示&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="377" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-23" value="&lt;b&gt;知识图谱&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Knowledge Graph)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;color: rgb(153, 153, 153); font-size: 10px;&quot;&gt;通过标签选择生成图谱，展示案例关联和设备统计，支持多维度分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="487" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-24" value="&lt;b&gt;援例诊断&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;2&quot;&gt;(Case-based Diagnosis)&lt;/font&gt;&lt;hr&gt;&lt;font style=&quot;font-size: 10px; color: rgb(153, 153, 153);&quot;&gt;输入缺陷描述，系统自动推送类似案例及解决方案，支持文本预处理&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="215" y="597" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-25" value="结束" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="318.5" y="707" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-26" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="k81Zt3lsYIYLHkIJKMMV-19" target="k81Zt3lsYIYLHkIJKMMV-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-27" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="k81Zt3lsYIYLHkIJKMMV-20" target="k81Zt3lsYIYLHkIJKMMV-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-28" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="k81Zt3lsYIYLHkIJKMMV-21" target="k81Zt3lsYIYLHkIJKMMV-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-29" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="k81Zt3lsYIYLHkIJKMMV-22" target="k81Zt3lsYIYLHkIJKMMV-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-30" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="k81Zt3lsYIYLHkIJKMMV-23" target="k81Zt3lsYIYLHkIJKMMV-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-31" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;" edge="1" parent="1" source="k81Zt3lsYIYLHkIJKMMV-24" target="k81Zt3lsYIYLHkIJKMMV-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k81Zt3lsYIYLHkIJKMMV-32" value="援例诊断智能体" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="235" y="20" width="220" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
